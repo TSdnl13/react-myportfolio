@@ -1,0 +1,13 @@
+.app {
+   background-color: var(--primary-color);
+}
+
+a { 
+   text-decoration: none;
+}
+
+.app__flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
