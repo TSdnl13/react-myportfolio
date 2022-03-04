@@ -6,7 +6,6 @@ import { Navbar } from './components';
 const App = () => {
    return (
       <div className='app'>
-         App
          <Navbar />
       </div>
    )

@@ -11,3 +11,12 @@ a {
    justify-content: center;
    align-items: center;
 }
+
+ul {
+   list-style: none;
+}
+
+body {
+   min-height: 100vh;
+   background-color: var(--primary-color);
+}
