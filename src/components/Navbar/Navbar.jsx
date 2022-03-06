@@ -37,9 +37,9 @@ const Navbar = () => {
          </div>
 
          <ul className='app__navbar-links app__flex'>
-            {["Inicio", "Habilidades", "Proyectos", "Contacto"].map((item) => (
+            {["Inicio", "Acerca", "Proyectos", "Habilidades",  "Contacto"].map((item) => (
                <li className='app__navbar-link' key={`link-${item}`}>
-                  <a href={`#${item}`} >{item}</a>
+                  <a href={`#${item.toLowerCase()}`} >{item}</a>
                </li>
             ))}
             
@@ -64,9 +64,9 @@ const Navbar = () => {
                         className="app__flex"
                      >
                         <ul>
-                           {["Inicio", "Habilidades", "Proyectos", "Contacto"].map((item) => (
+                           {["Inicio", "Acerca", "Proyectos", "Habilidades",  "Contacto"].map((item) => (
                               <li className='app__navbar-link' key={`link-${item}`}>
-                                 <a href={`#${item}`} onClick={() => animateToggle()} >{item}</a>
+                                 <a href={`#${item.toLowerCase()}`} onClick={() => animateToggle()} >{item}</a>
                               </li>
                            ))}
                         </ul>

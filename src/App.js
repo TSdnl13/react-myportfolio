@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { Header } from './container';
+import { Header, About } from './container';
 
 const App = () => {
    
@@ -11,6 +11,7 @@ const App = () => {
          <Navbar />
          <main className='app__flex'>
             <Header />
+            <About />
          </main>
       </div>
    )

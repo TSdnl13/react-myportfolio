@@ -6,7 +6,7 @@ import { images } from '../../constants';
 
 const Header = () => {
    return (
-      <section className='app__home'>
+      <section className='app__home' id='inicio'>
          <div className='app__home-content'>
             <h2 className='p-text'>Hola, soy</h2>
             <h1 className='head-text'>Daniel Ricra</h1>
