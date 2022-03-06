@@ -3,18 +3,18 @@
    justify-content: space-between;
    padding: 0 5rem;
    height: 100px;
+   width: 100%;
    transition: var(--transition);
+   position: fixed;
+   z-index: 20;
+   background-color: var(--primary-color);
 }
 
 .app__navbar-logo {
-   font-size: 3.8rem;
+   font-size: 3.2rem;
    font-weight: 500;
    letter-spacing: 1px;
-   
-   span {
-      font-weight: 300;
-      color: var(--dark-white-color)
-   }
+   color: var(--dark-white-color);
 }
 
 .app__navbar-links {
@@ -46,8 +46,9 @@
 
 .app__navbar-menu {
    display: none;
+   overflow: hidden;
 
-   @media screen and (max-width: 760px) {
+   @media (max-width: 760px) {
       display: flex;
    }
    .menu-toggle {
@@ -58,7 +59,7 @@
       align-items: center;
       overflow: hidden;
       cursor: pointer;
-      z-index: 10;
+      z-index: 100;
 
       span {
          position: absolute;
@@ -110,18 +111,19 @@
 }
 
 .app__navbar-menu-aside {
-   position: absolute;
+   position: fixed;
    top: 0;
    right: 0;
    bottom: 0;
+   height: 100%;
    background-color: lighten(#252D3C, 5%);
    padding: 5rem 1rem;
    width: #{"min(75vw, 400px)"};
-   z-index: 5; 
+   z-index: 50; 
    animation-name: movemenu;
    animation-duration: 750ms;
    box-shadow: -10px 0px 30px -15px rgba(55, 68, 93, 0.3);
-   
+
    nav {
       height: 80%;
       flex-direction: column;
@@ -158,13 +160,13 @@
 }
 
 .menu-overlay {
-   position: absolute;
+   position: fixed;
    background-color: rgba(37, 45, 60, 0.1);
    top: 0;
    left: 0;
    right: 0;
    bottom: 0;
    width: 100%;
-   z-index: 1;
+   z-index: 20;
    backdrop-filter: blur(3px);
 }

@@ -11,6 +11,7 @@
    --blue-color: #6A69F5;
    --dark-white-color: #E1E1E1;
    --dark-purple: #210E5F;
+   --dark-primary-color: #191F29;
    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
@@ -30,4 +31,13 @@ html {
 body {
    font-family: var(--font-base);
    font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+   width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+   background-color: hsl(219, 32%, 39%);
+   border: 3px solid var(--primary-color);
+   border-radius: 10px;
 }

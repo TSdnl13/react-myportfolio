@@ -20,3 +20,33 @@ body {
    min-height: 100vh;
    background-color: var(--primary-color);
 }
+
+main {
+   min-height: 100vh;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1600px;
+   padding: 0 2.5rem;
+}
+
+.p-text {
+   color: var(--gray-color);
+}
+
+section {
+   padding: 6rem 0;
+   margin: 0 auto;
+
+   @media screen and (min-width: 480px) {
+      padding: 8rem 0;
+   }
+   
+   @media screen and (min-width: 768px) {
+      padding: 10rem 0;
+      max-width: 100rem;
+   }
+}
+
+.hide-overflow {
+   overflow: hidden;
+}

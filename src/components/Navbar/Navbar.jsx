@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { Button } from '../../components';
@@ -20,10 +20,20 @@ const Navbar = () => {
       }
    }
 
+   useEffect(() => {
+      if (document.body.className === '' && toggle)
+         document.body.classList.add('hide-overflow');
+      
+     else {
+         document.body.classList.remove('hide-overflow');
+      }
+   }, [active])
+   
+
    return (
       <nav className='app__navbar app__flex'>
          <div className='app__navbar-logo'>
-            Daniel <span>Ricra</span>
+            Daniel
          </div>
 
          <ul className='app__navbar-links app__flex'>
