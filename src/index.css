@@ -5,7 +5,8 @@
    --primary-color: #252D3C;
    --white-color: #F6f6f6;
    --black-color: #1E242F;
-   --dark-blue: #282633;
+   --dark-blue: hsl(249, 15%, 17%);
+   --light-dark-purple: hsl(251, 13%, 24%);
    --dark-gray: #3D4657;
    --gray-color: #8C9EB1;
    --blue-color: #6A69F5;

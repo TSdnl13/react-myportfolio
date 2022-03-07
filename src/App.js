@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { Header, About } from './container';
+import { Header, About, Projects } from './container';
 
 const App = () => {
    
@@ -12,9 +12,12 @@ const App = () => {
          <main className='app__flex'>
             <Header />
             <About />
+            <Projects />
          </main>
       </div>
    )
 }
+
+let hello = ""
 
 export default App;
