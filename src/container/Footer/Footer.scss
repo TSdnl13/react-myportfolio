@@ -1,0 +1,21 @@
+.app__footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .app__footer-line {
+      width: 100%;
+      max-width: 100rem;
+      height: 1px;
+      background-color: var(--gray-color);
+      margin: 2rem 0 10rem 0;
+   }
+
+   .app__footer-copyright {
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+      p {
+         text-align: center;
+      }
+   }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { client } from '../../client';
+import { motion } from 'framer-motion';
 
 import { PhoneIcon, EmailIcon } from '../../components';
 import { Button } from '../../components';
@@ -38,10 +39,19 @@ const Contact = () => {
 
    return (
       <section className='app__contact app__flex' id='contacto'>
-         <h2 className='head-text'>Contactame</h2>
+         <motion.h2 
+            whileInView={{opacity: [0,1]}}
+            transition={{duration: 1}}
+            className='head-text'
+         >Contactame</motion.h2>
          
          <div className='app__contact-content'>
-            <div className='app__contact-cards'>
+            <motion.div 
+               initial={{x:"-50%"}}
+               whileInView={{x:0}}
+               transition={{duration: 1, ease: 'easeInOut'}}
+               className='app__contact-cards'
+            >
                <div className='app__contact-card'>
                   <PhoneIcon />
                   <a href="mailto:daniel.int@outlook.com" className='p-text'>daniel.int@outlook.com</a>
@@ -50,9 +60,14 @@ const Contact = () => {
                   <EmailIcon />
                   <a href="mailto: +51 966321885" className='p-text'> +51 966321885</a>
                </div>
-            </div>
+            </motion.div>
             {!isFormSubmitted ? 
-               <div className='app__contact-form app__flex'>
+               <motion.div 
+                  className='app__contact-form app__flex'
+                  initial={{x:"50%"}}
+                  whileInView={{x:0}}
+                  transition={{duration: 1, ease: 'easeInOut'}}
+               >
                   <div className='app__flex'>
                      <input 
                         type="text" 
@@ -87,11 +102,16 @@ const Contact = () => {
                      onClick={handleSubmit}
                   />
                   
-               </div>
+               </motion.div>
             :
-               <div className='successfull app__flex'>
+               <motion.div 
+                  initial={{x: 0, y: 40}}
+                  className='successfull app__flex'
+                  whileInView={{opacity: [0, 1], x: 0, y: 0}}
+                  duration={{ duration: 1, ease: 'easeInOut'}}
+               >
                   <p>Tu mensaje a sido enviado</p>
-               </div> 
+               </motion.div> 
             }
 
          </div>

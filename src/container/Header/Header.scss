@@ -10,6 +10,25 @@
    }
 }
 
+.app__home-socials {
+   margin-top: 3.5rem;
+   display: flex;
+   flex-direction: column;
+   a {
+      padding: 1rem;
+
+      svg {
+         font-size: 24px;
+         color: var(--gray-color);
+         transition: var(--transition);
+         &:hover {
+            transform: translateY(-4px) scale(1.08);
+            color: var(--blue-color);
+         }
+      }
+   }
+}
+
 section.app__home {
    @media (min-width: 1200px) {
       flex: 1;

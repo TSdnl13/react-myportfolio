@@ -7,7 +7,8 @@ import './Navbar.scss';
 const Navbar = () => {
 
    const [toggle, setToggle] = useState(false);
-   const [active, setActive] = useState("")
+   const [active, setActive] = useState("");
+   const [navClass, setNavClass] = useState("");
 
    function animateToggle() {
       if (!active) {
@@ -21,6 +22,25 @@ const Navbar = () => {
    }
 
    useEffect(() => {
+      let lastScrollY = window.scrollY;
+      window.addEventListener("scroll", () => {
+         if (lastScrollY < window.scrollY) {
+            setNavClass("hide-nav");
+         } else {
+            setNavClass("");
+         }
+         if (window.scrollY <= 10) setNavClass("static-nav")
+         lastScrollY = window.scrollY;
+      });
+
+      return () => {
+         window.removeEventListener("scroll");
+      };
+
+   }, []);
+   
+
+   useEffect(() => {
       if (document.body.className === '' && toggle)
          document.body.classList.add('hide-overflow');
       
@@ -30,8 +50,9 @@ const Navbar = () => {
    }, [active])
    
 
+
    return (
-      <nav className='app__navbar app__flex'>
+      <nav className={`app__navbar app__flex ${navClass}`}>
          <div className='app__navbar-logo'>
             Daniel
          </div>

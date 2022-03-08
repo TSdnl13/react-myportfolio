@@ -1,13 +1,21 @@
 .app__navbar {
    color: var(--white-color);
    justify-content: space-between;
-   padding: 0 5rem;
-   height: 80px;
+   padding: 1.5rem 5rem;
    width: 100%;
    transition: var(--transition);
    position: fixed;
    z-index: 20;
    background-color: var(--primary-color);
+   transition: all 0.3s ease-in-out;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+
+   &.static-nav {
+      box-shadow: none;
+   }
+   &.hide-nav {
+      transform: translateY(-100px);
+   }
 }
 
 .app__navbar-logo {

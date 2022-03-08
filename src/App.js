@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { Header, About, Projects, Skills, Contact } from './container';
+import { Header, About, Projects, Skills, Contact, Footer } from './container';
 
 const App = () => {
    
@@ -16,10 +16,9 @@ const App = () => {
             <Skills />
             <Contact />
          </main>
+         <Footer />
       </div>
    )
 }
-
-let hello = ""
 
 export default App;
