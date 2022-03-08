@@ -7,11 +7,16 @@ import { images } from '../../constants';
 const Header = () => {
    return (
       <section className='app__home' id='inicio'>
-         <div className='app__home-content'>
+         <motion.div
+            initial={{x: "-50%"}}
+            whileInView={{x: 0, opacity: [0, 1] }}
+            transition={{duration: 1}}
+            className='app__home-content'
+         >
             <h2 className='p-text'>Hola, soy</h2>
             <h1 className='head-text'>Daniel Ricra</h1>
             <p className='p-text'>Ingeniero de Software, diseño y programo cosas bonitas y simples, y amo lo que ago.</p>
-         </div>
+         </motion.div>
 
          <div className='app__home-imgs app__flex'>
                <motion.img 

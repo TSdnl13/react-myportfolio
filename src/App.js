@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { Header, About, Projects, Skills } from './container';
+import { Header, About, Projects, Skills, Contact } from './container';
 
 const App = () => {
    
@@ -14,6 +14,7 @@ const App = () => {
             <About />
             <Projects />
             <Skills />
+            <Contact />
          </main>
       </div>
    )

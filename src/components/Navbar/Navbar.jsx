@@ -71,7 +71,7 @@ const Navbar = () => {
                            ))}
                         </ul>
 
-                        <Button text="CV" />
+                        <Button text="CV" classes='aside-button' />
                      </motion.nav>
                   </div>
                   <div 
