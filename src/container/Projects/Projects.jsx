@@ -47,7 +47,6 @@ const Projects = () => {
                               src={urlFor(project.imgUrl)} 
                               alt={project.title} 
                            />
-                           <div className='project-img-overlay'></div>
                         </div>
                         <div className='project-content'>
                            <h3>{project.title}</h3>

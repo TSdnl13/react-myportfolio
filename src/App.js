@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { Header, About, Projects } from './container';
+import { Header, About, Projects, Skills } from './container';
 
 const App = () => {
    
@@ -13,6 +13,7 @@ const App = () => {
             <Header />
             <About />
             <Projects />
+            <Skills />
          </main>
       </div>
    )
