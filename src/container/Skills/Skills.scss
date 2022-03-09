@@ -10,6 +10,9 @@
       flex-wrap: wrap;
       gap: 4rem;
       justify-content: center;
+      @media (max-width: 480px) {
+         gap: 2rem;
+      }
    }
 }
 
@@ -34,6 +37,13 @@
             height: 80px;
          }
       }
+      @media (max-width: 480px) {
+         padding: 1.2rem;
+         img {
+            width: 60px;
+            height: 60px;
+         }
+      }
    }
 
    p {
@@ -41,5 +51,10 @@
       font-size: 20px;
       font-weight: 500;
       line-height: 1.7;
+      @media (max-width: 480px) {
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 1.3;
+      }
    }
 }

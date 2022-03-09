@@ -20,13 +20,13 @@ const Header = () => {
             <p className='p-text'>Ingeniero de Software, diseño y programo cosas bonitas y simples, y amo lo que ago.</p>
 
             <div className='app__home-socials'>
-               <a href="#" target='_blank' rel='noreferrer'>
+               <a href="https://github.com/TSdnl13" target='_blank' rel='noreferrer'>
                   <RiGithubLine title='Github' />   
                </a>
-               <a href="#" target='_blank' rel='noreferrer'>
+               <a href="https://www.linkedin.com/in/daniel-ricra/" target='_blank' rel='noreferrer'>
                   <FiLinkedin title='LinkedIn' />
                </a>
-               <a href="#" target='_blank' rel='noreferrer'>
+               <a href="https://www.instagram.com/daniel_rrq/" target='_blank' rel='noreferrer'>
                   <FiInstagram title='Instagram' />
                </a>
             </div>

@@ -4,11 +4,15 @@
    align-items: center;
 
    .app__footer-line {
-      width: 100%;
+      width: 90%;
       max-width: 100rem;
       height: 1px;
       background-color: var(--gray-color);
       margin: 2rem 0 10rem 0;
+
+      @media (max-width: 1000px) {
+         width: 75%;
+      }
    }
 
    .app__footer-copyright {

@@ -1,5 +1,6 @@
 .app {
    background-color: var(--primary-color);
+   overflow-x: hidden;
 }
 
 a { 
@@ -57,4 +58,8 @@ section {
    font-size: 4.4rem;
    color: var(--white-color);
    font-weight: 700;
+   @media (max-width: 480px) {
+      font-size: 3.6rem;
+      font-weight: 600;
+   }
 }

@@ -16,6 +16,9 @@
    &.hide-nav {
       transform: translateY(-100px);
    }
+   @media (max-width: 480px) {
+      padding: 1.5rem 2rem;
+   }
 }
 
 .app__navbar-logo {
@@ -131,7 +134,9 @@
    animation-name: movemenu;
    animation-duration: 750ms;
    box-shadow: -10px 0px 30px -15px rgba(55, 68, 93, 0.3);
-
+   @media (max-width: 480px ){
+      width: 100%;
+   }
    nav {
       height: 80%;
       flex-direction: column;
