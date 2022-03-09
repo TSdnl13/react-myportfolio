@@ -2,6 +2,7 @@
    color: var(--white-color);
    justify-content: space-between;
    padding: 1.5rem 5rem;
+   height: 80px;
    width: 100%;
    transition: var(--transition);
    position: fixed;
@@ -12,6 +13,8 @@
 
    &.static-nav {
       box-shadow: none;
+      height: 90px;
+
    }
    &.hide-nav {
       transform: translateY(-100px);
@@ -22,13 +25,14 @@
 }
 
 .app__navbar-logo {
-   font-size: 3.2rem;
-   font-weight: 500;
-   letter-spacing: 1px;
-   color: var(--dark-white-color);
+   img {
+      width: 40px;
+      height: 42px;
+   }
 }
 
 .app__navbar-links {
+   backdrop-filter: blur(15px);
    
    .app__navbar-link {
       margin-right: 2.5rem;
@@ -134,6 +138,7 @@
    animation-name: movemenu;
    animation-duration: 750ms;
    box-shadow: -10px 0px 30px -15px rgba(55, 68, 93, 0.3);
+   border-left: 1px solid rgba(0, 0, 0, 0.25);
    @media (max-width: 480px ){
       width: 100%;
    }

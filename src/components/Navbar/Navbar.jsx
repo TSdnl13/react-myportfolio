@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { Button } from '../../components';
+import { images } from '../../constants';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -53,9 +54,9 @@ const Navbar = () => {
 
    return (
       <nav className={`app__navbar app__flex ${navClass}`}>
-         <div className='app__navbar-logo'>
-            Daniel
-         </div>
+         <a href="/" className='app__navbar-logo'>
+            <img src={images.logo} alt="logo" />
+         </a>
 
          <ul className='app__navbar-links app__flex'>
             {["Inicio", "Acerca", "Proyectos", "Habilidades",  "Contacto"].map((item) => (

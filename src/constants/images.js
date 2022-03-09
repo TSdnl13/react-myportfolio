@@ -17,6 +17,8 @@ import java from '../assets/java.png';
 import mysql from '../assets/mysql.png';
 import sass from '../assets/sass.png';
 
+import logo from '../assets/logo.png';
+
 export default {
    DLheader,
    DLabout,
@@ -33,5 +35,6 @@ export default {
    css,
    react,
    mysql,
-   sass
+   sass,
+   logo
 }
