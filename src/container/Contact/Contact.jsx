@@ -21,8 +21,7 @@ const Contact = () => {
 
    const handleSubmit = () => {
       setLoading(true);
-      console.log("senfing")
-
+      
       const contact = {
          _type: 'contact',
          name: name,
@@ -73,7 +72,8 @@ const Contact = () => {
                         type="text" 
                         className='p-text'
                         placeholder='Nombre'
-                        name={name}
+                        value={name}
+                        name='name'
                         onChange={handleChangeInput}
                      />
                   </div>
@@ -83,7 +83,8 @@ const Contact = () => {
                         type="email" 
                         className='p-text'
                         placeholder='Email'
-                        name={email}
+                        value={email}
+                        name='email'
                         onChange={handleChangeInput}
                      />
                   </div>
@@ -92,14 +93,15 @@ const Contact = () => {
                         type="text" 
                         className='p-text'
                         placeholder='Mensaje'
-                        name={message}
+                        name='message'
+                        value={message}
                         onChange={handleChangeInput}
                      />
                   </div>
                   <Button 
                      text={loading ? 'Enviando':'Enviar Mensaje'} 
                      classes='big-button'
-                     onClick={handleSubmit}
+                     onClick={() => handleSubmit()}
                   />
                   
                </motion.div>
