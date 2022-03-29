@@ -53,11 +53,11 @@ const Contact = () => {
                className='app__contact-cards'
             >
                <div className='app__contact-card'>
-                  <PhoneIcon />
+                  <EmailIcon />
                   <a href="mailto:daniel.int@outlook.com" className='p-text'>daniel.int@outlook.com</a>
                </div>
                <div className='app__contact-card'>
-                  <EmailIcon />
+                  <PhoneIcon />
                   <a href="mailto: +51 966321885" className='p-text'> +51 966321885</a>
                </div>
             </motion.div>
