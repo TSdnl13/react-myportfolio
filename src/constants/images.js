@@ -1,5 +1,8 @@
+/* eslint-disable import/no-anonymous-default-export */
 import DLheader from '../assets/DLheader.png';
 import DLabout from '../assets/DLabout.png';
+import DRabout from '../assets/DRabout.png';
+import DRheader from '../assets/DRheader.png';
 
 import mainjava from '../assets/mainjava.png';
 import mainpython from '../assets/mainpython.png';
@@ -22,6 +25,8 @@ import logo from '../assets/logo.png';
 export default {
    DLheader,
    DLabout,
+   DRabout,
+   DRheader,
    mainjava,
    mainpython,
    mainreact,
