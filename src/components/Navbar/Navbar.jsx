@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '../../components';
 import { images } from '../../constants';
 import './Navbar.scss';
+import PDF from'../../assets/CV_Daniel-Ricra.pdf';
 
 const Navbar = () => {
 
@@ -14,10 +15,10 @@ const Navbar = () => {
    function animateToggle() {
       if (!active) {
          setActive("active");
-         setToggle(true)
+         setToggle(true);
       }
       else { 
-         setActive("")
+         setActive("");
          setToggle(false);
       }
    }
@@ -35,11 +36,10 @@ const Navbar = () => {
       });
 
       return () => {
-         window.removeEventListener("scroll");
+         window.removeEventListener("scroll", null);
       };
 
    }, []);
-   
 
    useEffect(() => {
       if (document.body.className === '' && toggle)
@@ -48,9 +48,8 @@ const Navbar = () => {
      else {
          document.body.classList.remove('hide-overflow');
       }
-   }, [active])
-   
-
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, [active]);
 
    return (
       <nav className={`app__navbar app__flex ${navClass}`}>
@@ -65,7 +64,7 @@ const Navbar = () => {
                </li>
             ))}
             
-            <Button text="CV" /> 
+            <a className='button' href={PDF} target='_blank' rel='noopener noreferrer'>CV</a> 
          </ul>
 
          <div className='app__navbar-menu'>
