@@ -91,8 +91,8 @@ const Navbar = () => {
                               </li>
                            ))}
                         </ul>
-
-                        <Button text="CV" classes='aside-button' />
+                        
+                        <a className='button aside-button' href={PDF} target='_blank' rel='noopener noreferrer'>CV</a>
                      </motion.nav>
                   </div>
                   <div 
