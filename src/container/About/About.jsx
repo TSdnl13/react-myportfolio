@@ -22,7 +22,7 @@ const About = () => {
                style={{}}
             >
                <div className='about-overlay'></div>
-               <img src={images.DLabout} alt="about-photo" />
+               <img src={images.DRabout} alt="about" />
                
                <div className='app__about-grids'>
                   <img src={images.grid} alt="grid" />

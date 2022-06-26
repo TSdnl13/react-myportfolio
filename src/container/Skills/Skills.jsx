@@ -14,6 +14,9 @@ const Skills = () => {
       client.fetch(query)
          .then(data => {
             setSkills(data);
+         })
+         .catch(error => {
+            
          });
      
    }, []);
@@ -21,7 +24,7 @@ const Skills = () => {
 
    return (
       <section className='app__skills app__flex' id='habilidades'>
-         <h2 className='head-text'>Skills</h2>
+         <h2 className='head-text'>Habilidades</h2>
 
          <div className='app__skills-list'>
             {skills.map((skill, index) => (
@@ -33,7 +36,7 @@ const Skills = () => {
                   key={skill.name}
                >
                   <div>
-                     <img src={urlFor(skill.icon)} alt={skill.name} />
+                     <img src={urlFor(skill?.icon) || ''} alt={skill.name} />
                   </div>
                   <p className='p-text'>{skill.name}</p>
                </motion.div>

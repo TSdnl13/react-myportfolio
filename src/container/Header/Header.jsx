@@ -33,21 +33,21 @@ const Header = () => {
          </motion.div>
 
          <div className='app__home-imgs app__flex'>
-               <motion.img 
-                  whileInView={{ scale:[0, 1] }}
-                  transition={{ duration: 1, ease: 'easeInOut' }}    
-                  className='app__home-img' 
-                  src={ images.DLheader }
-                  alt="profile-photo"
-               />         
+            <motion.img 
+               whileInView={{ scale:[0, 1] }}
+               transition={{ duration: 1, ease: 'easeInOut' }}    
+               className='app__home-img' 
+               src={ images.DRheader }
+               alt="profile-photo"
+            />         
 
-               <motion.img
-                  whileInView={{ scale: [0, 1]}}
-                  transition={{ duration: 1, ease: 'easeIn' }}
-                  className='app__home-circle app__flex'
-                  src={ images.circle }
-                  alt="circle-bg"
-               />
+            <motion.img
+               whileInView={{ scale: [0, 1]}}
+               transition={{ duration: 1, ease: 'easeIn' }}
+               className='app__home-circle app__flex'
+               src={ images.circle }
+               alt="circle-bg"
+            />
          </div>
          
          <motion.div 

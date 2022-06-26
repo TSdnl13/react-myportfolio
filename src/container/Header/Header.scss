@@ -5,6 +5,7 @@
    width: 100%;
    min-height: 100vh;
    max-width: 1000px;
+   padding-bottom: 0;
    @media (min-width: 1200px) {
       flex-direction: row;
    }
@@ -53,7 +54,6 @@ section.app__home {
 
    .app__home-img {
       z-index: 1;
-      width: 50%;
       object-fit: contain;
    }
 
@@ -64,6 +64,10 @@ section.app__home {
       bottom: 0;
       left: 0;
       right: 0;
+      @media (min-width: 1440px) {
+         width: 80%;
+         left: 13%;
+      }
    }
 }
 
