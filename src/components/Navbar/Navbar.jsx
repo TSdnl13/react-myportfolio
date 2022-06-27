@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import { Button } from '../../components';
 import { images } from '../../constants';
 import './Navbar.scss';
 import PDF from'../../assets/CV_Daniel-Ricra.pdf';
@@ -91,7 +90,7 @@ const Navbar = () => {
                               </li>
                            ))}
                         </ul>
-                        
+
                         <a className='button aside-button' href={PDF} target='_blank' rel='noopener noreferrer'>CV</a>
                      </motion.nav>
                   </div>
